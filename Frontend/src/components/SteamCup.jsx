@@ -7,7 +7,7 @@ function SteamCup({ teaTemp, setTeaTemp }) {
     <div className=" mt-6 max-w-3xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-6">
 
       <h2 className="text-xl md:text-2xl font-semibold text-white mb-6 text-center">
-        Cup Temperature
+        Drink Temperature
       </h2>
 
      

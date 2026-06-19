@@ -79,7 +79,6 @@ function Result({ result }) {
         ☕
       </motion.div>
 
-      {/* Heading */}
 
       <h2
         className="
@@ -127,8 +126,6 @@ function Result({ result }) {
         </h3>
 
       </div>
-
-      {/* AI Message */}
 
       <div
         className="

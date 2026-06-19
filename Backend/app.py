@@ -36,7 +36,7 @@ def predict():
     return jsonify({
         "drinkable_time": minutes,
         "ready_at": ready_time,
-        "message": f"Your tea will be perfect in {minutes} minutes"
+        "message": f"Your drink will be perfect in {minutes} minutes"
     })
 if __name__ == "__main__":
     app.run(debug=True)
