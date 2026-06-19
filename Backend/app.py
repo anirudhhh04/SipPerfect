@@ -2,6 +2,7 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from flask_cors import CORS
 import joblib
 import pandas as pd
@@ -31,7 +32,7 @@ def predict():
     )
     prediction = model.predict(input_data)[0]
     minutes = int(round(float(prediction), 2))
-    ready_time = (datetime.now() + timedelta(minutes=minutes)).strftime("%I:%M %p")
+    ready_time = ( datetime.now(ZoneInfo("Asia/Kolkata")) + timedelta(minutes=minutes)).strftime("%I:%M %p")
     return jsonify({
         "drinkable_time": minutes,
         "ready_at": ready_time,
