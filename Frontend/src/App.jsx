@@ -33,7 +33,7 @@ function App() {
                  }, 1200);
 
                  try {
-                        const response = await axios.post( "http://127.0.0.1:5000/predict",
+                        const response = await axios.post( "https://sipperfect.onrender.com/predict",
                              { tea_temp:teaTemp, room_temp:roomTemp, fan_speed:fanSpeed,volume_ml:volume,cup_material:cupMaterial,}
                         );
                         setTimeout(() => {
